@@ -184,7 +184,7 @@ programming in Python.
 - View Link button. Extra button to open index link in broswer instead of direct download for file
 - Queueing System for all tasks (global option)
 - Ability to zip/unzip multi links in same directory. Mostly helpful in unziping tg file parts (task option)
-- Bulk download from telegram txt file or text message contains links seperated by new line (task option)
+- Bulk download from telegram txt file or text message contains links separated by new line (task option)
 - Join splitted files that have splitted before by split(linux pkg) (task option)
 - Sample video Generator (task option)
 - Screenshots Generator (task option)
@@ -331,7 +331,7 @@ Fill up rest of the fields. Meaning of each field is discussed below.
 **4. Rclone**
 
 - `RCLONE_PATH` (`Str`): Default rclone path to which you want to upload all the files/folders using rclone.
-- `RCLONE_FLAGS` (`Str`): key:value|key|key|key:value . Check here all [RcloneFlags](https://rclone.org/flags/).
+- `RCLONE_FLAGS` (`Str`): --key:value|--key|--key|--key:value . Check here all [RcloneFlags](https://rclone.org/flags/).
 - `RCLONE_SERVE_URL` (`Str`): Valid URL where the bot is deployed to use rclone serve. Format of URL should be `http://myip`, where `myip` is the IP/Domain(public) of your bot or if you have chosen port other than `80` so write it in this format `http://myip:port` (`http` and not `https`). `Str`
 - `RCLONE_SERVE_PORT` (`Int`): Which is the **RCLONE_SERVE_URL** Port. Default is `8080`.
 - `RCLONE_SERVE_USER` (`Str`): Username for rclone serve authentication.
@@ -401,6 +401,11 @@ Fill up rest of the fields. Meaning of each field is discussed below.
   TorrentFunk, Glodls, TorrentProject and YourBittorrent
 - `SEARCH_LIMIT` (`Int`): Search limit for search api, limit for each site and not overall result limit. Default is zero (Default api limit for each site).
 - `SEARCH_PLUGINS` (`List`): List of qBittorrent search plugins (github raw links). I have added some plugins, you can remove/add plugins as you want. Main Source: [qBittorrent Search Plugins (Official/Unofficial)](https://github.com/qbittorrent/search-plugins).
+
+**13. NZB Search**
+
+- `HYDRA_IP` (`Str`): IP address of [nzbhydra2](https://github.com/theotherp/nzbhydra2).
+- `HYDRA_API_KEY` (`Str`): API key from [nzbhydra2](https://github.com/theotherp/nzbhydra2).
 
 ------
 
